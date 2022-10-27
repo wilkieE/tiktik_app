@@ -64,18 +64,18 @@ const Profile = ({ data }: IProps) => {
           >
             Liked
           </p>
+        </div>
 
-          <div className="flex gap-6 flex-wrap md:justify-start">
-            {videosList.length > 0 ? (
-              videosList.map((post: Video, idx: number) => (
-                <VideoCard post={post} key={`${idx}`} />
-              ))
-            ) : (
-              <NoResults
-                text={`No ${showUserVideos ? "" : "Liked"} Videos yet`}
-              />
-            )}
-          </div>
+        <div className="flex gap-6 flex-wrap md:justify-start">
+          {videosList.length > 0 ? (
+            videosList.map((post: Video, idx: number) => (
+              <VideoCard post={post} key={`${idx}`} />
+            ))
+          ) : (
+            <NoResults
+              text={`No ${showUserVideos ? "" : "Liked"} Videos yet`}
+            />
+          )}
         </div>
       </div>
     </div>
