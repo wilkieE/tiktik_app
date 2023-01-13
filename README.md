@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# tiktik_app
+Social media application built using Typescript, React/Next.js, and Tailwind CSS. On this app, users can upload, publish, share, comment on, and like videos. They can also  filter videos by categories and use other advanced search functionalities, profile pages and suggested accounts. This project was built following the Jsm tutorial.
+
+![Video-sharing Social Media Application](https://user-images.githubusercontent.com/48595932/212324901-e1812d0e-e358-4f4e-9294-cb655033eee6.png)
+
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository to your local machine.
+2. Run `npm install` to install all dependencies.
+3. Get your  [**Google API client ID token**](https://console.cloud.google.com/apis/dashboard), this is needed by the app for signing users in using [**React OAuth2**](https://www.npmjs.com/package/@react-oauth/google)
+4. Get a Public Sanity token. You will need to set up an account at [**Sanity.io**](https://www.sanity.io/) to be able to run a backend for this project
+5. Create a file called `.env.development` in the root folder of the project, add the `NEXT_PUBLIC_GOOGLE_API_TOKEN`, `NEXT_PUBLIC_SANITY_TOKEN`API keys and also a`NEXT_PUBLIC_BASE_URL`  and save the file.
+6. Run `npm run dev`in your terminal to start the development server.
+7. Follow the link in your terminal to view the app in your browser.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Features
+- Login with Google Auth
+- Video uploading and sharing
+- Commenting and liking
+- Filtering and advanced search
+- Profile pages and suggested accounts
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Built With
+- Typescript
+- React/Next.js
+- Tailwind CSS
+- Sanity
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Contributions
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
